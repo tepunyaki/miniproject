@@ -88,7 +88,7 @@ public class App {
         check("Bulk Strategy (above threshold)", pricingService.calculateItemPrice(tenSodas) == 45.0);
         check("Default Strategy", pricingService.calculateItemPrice(normalBread) == 60.0);
 
-        pricingService.addstrategy("P001", new BulkDiscountStrategy(3, 0.50)); // เปลี่ยนโปรโมชัน Apple เป็นซื้อ 3 ลด 50%
+        pricingService.addStrategy("P001", new BulkDiscountStrategy(3, 0.50)); // เปลี่ยนโปรโมชัน Apple เป็นซื้อ 3 ลด 50%
         CartItem threeApples = new CartItem(apple, 3);
         check("Promotion update works", pricingService.calculateItemPrice(threeApples) == 15.0); // 30 * 0.5 = 15.0
 
