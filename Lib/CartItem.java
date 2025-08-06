@@ -28,12 +28,13 @@ public class CartItem {
         }
      }
      /**
-      * สร้างรายการสินค้าในตะกร้า
+      * สร้างรายการสินค้าที่อยู่ในตะกร้า
       @param product อ็อบเจกต์สินค้า
       @param quantity จำนวนสินค้า ต้องมากกว่า 0
       */
-      public CartItem(Product product ,int quantity){
-        this.product = product ;
+      public CartItem(Object product ,int quantity){
+        Product object = null;
+        this.product = object ;
         this.quantity = quantity ;
         checkRep();
     }
