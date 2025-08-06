@@ -4,7 +4,7 @@ import Lib.*;
 /**
  * กลยุทธ์ส่วนลด Bulk (ซื้อเยอะลดราคา)
  */
-public class BulkDiscountStrategy implements DiscountStrategy{
+public class BulkDiscountStrategy implements DiscountStrategy, Lib.DiscountStrategy{
 
     private final int minimumQuantity;
     private final double discountPercentage;
